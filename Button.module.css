@@ -1,0 +1,192 @@
+.button {
+  display: flex;
+  row-gap: 5px;
+  column-gap: 5px;
+  font-weight: 600;
+  color: var(--block-ground-color);
+  border-radius: 8px;
+  background: linear-gradient(
+    268deg,
+    #f97850 0%,
+    rgba(250, 88, 78, 0.97) 99.24%
+  );
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 160px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.button:hover {
+  border: 2px solid #ffc3b0;
+}
+
+.button:disabled {
+  background: var(--disabled-color);
+  cursor: initial;
+}
+
+.buttonSubtext {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.userButton {
+  background: var(--primary-color) !important;
+  padding: 10px 25px !important;
+  border-radius: 15px !important;
+  font-weight: 560 !important;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  font-size: 14px !important;
+}
+
+.userButton:hover:not(.userButton:disabled) {
+  background: #fb9746 !important;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.userButton:disabled {
+  background: var(--disable-color) !important;
+  cursor: not-allowed;
+}
+
+.resetButton {
+  background: var(--secondary-color) !important;
+  padding: 10px 25px !important;
+  border-radius: 15px !important;
+  font-weight: 560 !important;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  font-size: 14px !important;
+}
+
+.resetButton:hover:not(.userButton:disabled) {
+  background: #fb9746 !important;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.resetButton:disabled {
+  background: var(--disable-color) !important;
+  cursor: not-allowed;
+}
+
+/* CLEAR buttin type */
+.clearButton {
+  background: var(--accent-color);
+  color: var(--block-ground-color);
+  height: 25px;
+  font-size: 10px;
+  width: 100%;
+  border: none;
+}
+.clearButton:hover {
+  border: none;
+}
+.clearButton:disabled {
+  background: none;
+  color: var(--checkbox-color);
+}
+
+.lqsButton {
+  padding: 5px 15px;
+  font-size: 14px !important;
+  background: rgb(255, 246, 231);
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 17px !important;
+  box-shadow: 2px 2px 5px var(--table-border-color);
+}
+
+.lqsButton:hover {
+  background: rgb(255, 241, 216);
+}
+
+.deleteButton {
+  background: var(--error-color) !important;
+}
+
+.deleteButton:hover {
+  background: rgb(255, 100, 100) !important;
+}
+
+.activateButton {
+  background: var(--success-color) !important;
+}
+
+.activateButton:hover {
+  background: #46c463 !important;
+}
+
+.buttonLoader {
+  width: 15px !important;
+  height: 15px !important;
+  margin-right: 5px;
+}
+
+.secondaryButton {
+  background: #ee7900;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  padding: 7px 30px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px var(--disable-color);
+  color: var(--ground_color);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.secondaryButton:hover {
+  background: #e07706;
+  box-shadow: 2px 2px 4px var(--disable-color);
+}
+
+.secondaryButton:disabled {
+  background: var(--disable-color);
+  cursor: not-allowed;
+  color: var(--primary-color);
+}
+
+/* SQS Button */
+.sqsButton {
+  position: relative;
+  border: 1px solid var(--disabled-color);
+  background: var(--block-ground-color);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 10px;
+  max-width: 125px;
+  width: fit-content;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+.sqsButton:hover {
+  background: var(--accent-color);
+  color: var(--block-ground-color);
+  border: 1px solid var(--accent-color);
+}
+.sqsButton:disabled {
+  background: var(--block-ground-color);
+  color: var(--disabled-color);
+  cursor: initial;
+}
+.sqsButton:disabled:hover {
+  background: var(--block-ground-color);
+  border: 1px solid var(--disabled-color);
+}
+
+.cancelButton {
+  background: #cdd8e0;
+  color: var(--block-ground-color);
+}
+.cancelButton:hover {
+  border: none;
+}
